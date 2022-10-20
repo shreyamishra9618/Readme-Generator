@@ -65,7 +65,7 @@ inquirer
   
     Check out the badges hosted by [shields.io](https://shields.io/).
   
-    # ${response.title}
+    
     
     # Table of Content
     -[description](# description)
@@ -77,41 +77,41 @@ inquirer
     -[username](# username)
    
     
-    ## Title: 
+    ## Title 
     ${response.projectTitle}
-    ## username:
+    ## Username:
     ${response.username}
     
       
-    ## description:  
+    ## Description:  
     ${response.description}
     
         
-    ## installation:
+    ## Installation:
     ${response.installation}
     
         
-    ## usage:
+    ## Usage:
     ${response.usage}
     
        
-    ## licenses: 
+    ## Licenses: 
     ${response.license}
     
        
-    ## contribution: 
+    ## Contribution: 
     ${response.contribution}
     
        
-    ## test: 
+    ## Test: 
     ${response.tests}
     
        
-    ## email: 
+    ## Email: 
     ${response.email}
     `;
 
-    fs.writeFile("README.md", readme, (err) =>
+    fs.writeFile("./generatedFile/README.md", readme, (err) =>
       err ? console.log(err) : console.log('Success!')
     );
   });
