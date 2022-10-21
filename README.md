@@ -9,9 +9,12 @@
 
 💻 Below is the gif showing the functionality of the application:
   
-![README Generator](./contents/readmeGenerator.gif)
-  
-🎥 The full movie file showing functionality of the application can be found [here](./contents/readme_generator_video.mov) 
+![README Generator](./contents/Untitled.gif)
+
+🎥 The full movie file showing functionality of the application can be found [here](./contents/readme_generator_video.mov) <br />
+🎥 The full movie file showing functionality of the application in mp4 format can be found [here](./contents/ReadmeGeneratorMP.mp4) 
+
+
 
   ## Table of Contents
   * [Installation](#installation)
