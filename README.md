@@ -9,7 +9,7 @@
 
 💻 Below is the gif showing the functionality of the application:
   
-![README Generator](./content/readmeGenerator.gif)
+![README Generator](./contents/readmeGenerator.gif)
   
 🎥 The full movie file showing functionality of the application can be found [here](./contents/readme_generator_video.mov) 
 
@@ -31,12 +31,12 @@
   
   ## Usage  
 
-  * Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). 
+   * Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4). 
 
-  💻 Run the following command at th root of your project and answer the prompted questions.
-  `npm init`
+   💻 Run the following command at th root of your project and answer the prompted questions.
+   `npm init`
   
- `npm install inquirer`
+   `npm install inquirer`
 
   ## Contributing
   
