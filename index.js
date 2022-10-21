@@ -60,56 +60,32 @@ inquirer
         message: "Please enter your email: "
     }])
   .then((response) => {
-    const readme =`
-    ![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/connietran-dev/readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/connietran-dev/readme-generator?style=flat&logo=appveyor)
+    const readme =`![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/connietran-dev/readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/connietran-dev/readme-generator?style=flat&logo=appveyor)
   
     Check out the badges hosted by [shields.io](https://shields.io/).
   
-    
-    
-    # Table of Content
-    -[description](# description)
-    -[installation](# installation)
-    -[usage](# usage)
-    -[licenses](# licenses)
-    -[contribution](# contribution)
-    -[test](# test)
-    -[username](# username)
-   
-    
-    ## Title 
-    ${response.projectTitle}
-    ## Username:
-    ${response.username}
-    
-      
-    ## Description:  
-    ${response.description}
-    
-        
-    ## Installation:
-    ${response.installation}
-    
-        
-    ## Usage:
-    ${response.usage}
-    
-       
-    ## Licenses: 
-    ${response.license}
-    
-       
-    ## Contribution: 
-    ${response.contribution}
-    
-       
-    ## Test: 
-    ${response.tests}
-    
-       
-    ## Email: 
-    ${response.email}
-    `;
+
+## Title <br />
+${response.projectTitle}
+## Username <br />
+${response.username}
+## Description <br />
+ ${response.description}
+## Installation  <br />
+${response.installation}
+## Usage <br />
+${response.usage}
+## License <br />
+${response.license}
+## Contribution  <br />
+${response.contribution}
+## Test  <br />
+${response.tests}
+## Email 
+${response.email}
+
+
+`;
 
     fs.writeFile("./generatedFile/README.md", readme, (err) =>
       err ? console.log(err) : console.log('Success!')
