@@ -1,6 +1,8 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require("util");
+const licenseBadge = require("./licenseBadge").licenseBadge;
 
 inquirer
   .prompt([
@@ -60,15 +62,16 @@ inquirer
         message: "Please enter your email: "
     }])
   .then((response) => {
+    response.licenseBadge = licenseBadge(response.license);
     const readme =`![Badge for GitHub repo top language](https://img.shields.io/github/languages/top/connietran-dev/readme-generator?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/connietran-dev/readme-generator?style=flat&logo=appveyor)
   
     Check out the badges hosted by [shields.io](https://shields.io/).
   
 
-## Title <br />
-${response.projectTitle}
-## Username <br />
-${response.username}
+
+## ${response.projectTitle} <br />
+${response.licenseBadge}
+
 ## Description <br />
  ${response.description}
 ## Installation  <br />
@@ -81,8 +84,11 @@ ${response.license}
 ${response.contribution}
 ## Test  <br />
 ${response.tests}
-## Email 
-${response.email}
+
+
+## Contact Information:
+* GitHub Username: ${response.username}
+* GitHub Email: ${response.email}
 
 
 `;

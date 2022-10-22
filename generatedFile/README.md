@@ -3,23 +3,26 @@
     Check out the badges hosted by [shields.io](https://shields.io/).
   
 
-## Title <br />
-Readme generator
-## Username <br />
-shreyamishra9618
+
+## README GENERATOR <br />
+[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+
 ## Description <br />
- It dynamically generates the README.md file for developers with the help of CLI
+ When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
 ## Installation  <br />
-need to install npm
+npm install
 ## Usage <br />
-To help developers save their time by dynamically generating readme file via terminal.
+To help developers to save their time.
 ## License <br />
-MIT
+GNU
 ## Contribution  <br />
 Shreya Mishra
 ## Test  <br />
-Yes npm test
-## Email 
-shreyamishra9618@gmail.com
+yes
+
+
+## Contact Information:
+* GitHub Username: shreyamishra9618
+* GitHub Email: shreyamishra9618@gmail.com
 
 
